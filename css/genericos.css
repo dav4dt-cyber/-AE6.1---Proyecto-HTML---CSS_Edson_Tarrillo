@@ -1,0 +1,14 @@
+/* =========================================
+   ESTILOS BASE PARA TODAS LAS PÁGINAS
+   ========================================= */
+body {
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente a toda la web */
+    margin: 0; /* Elimina los márgenes por defecto del navegador */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Evita que el padding o los bordes deformen los tamaños de las cajas en toda la web */
+* {
+    box-sizing: inherit;
+}

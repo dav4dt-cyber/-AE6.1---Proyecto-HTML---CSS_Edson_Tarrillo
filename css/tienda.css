@@ -1,0 +1,143 @@
+.Titulo{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px; 
+
+}
+/* Estructura principal: Uso de Flexbox para organizar el catálogo de productos en formato cuadrícula */
+.contenedor-imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.tarjeta-zapato{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 1px;
+}
+
+
+
+.tarjeta-zapato img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.nombre-zapato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 22px;
+ 
+}
+
+.precio-zapatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+.boton-compra{
+    width: 160px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+/* Interactividad: Cambio de color al pasar el cursor sobre los botones para mejorar la experiencia de usuario */
+.boton-compra:hover{
+    background-color:#F28C28 ;
+}
+
+
+.paginacion{
+    display: flex;
+    align-content: center;
+    justify-content:flex-end;
+    gap: 10px;
+    margin: 40px 10%;
+
+}
+
+.paginacion a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    transition: 0.3s ease;
+    font-size: 10px;
+}
+
+.paginacion a:hover{
+    background-color: #F28C28;
+
+}
+
+@media (max-width: 768px) {
+    .Titulo {
+        font-size: 32px;
+    }
+
+    .contenedor-imagenes {
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .tarjeta-zapato img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .nombre-zapato {
+        font-size: 18px;
+    }
+
+    .precio-zapatos {
+        font-size: 16px;
+    }
+
+    .boton-compra {
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .paginacion {
+        justify-content: center;
+        margin: 30px 20px;
+    }
+}

@@ -1,0 +1,143 @@
+.Titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bold;
+
+    
+}
+
+hr{
+    margin-top: 35px;
+    margin-bottom: 35px; 
+
+}
+
+.Contenedor-Cursos{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    max-width: 1200px;
+
+}
+/* Maquetación flexible para alinear horizontalmente la imagen y la descripción de cada curso de forma equilibrada */
+.Curso1, .Curso2{
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+
+
+}
+
+/* Ajuste de proporciones (object-fit) para asegurar que las fotografías mantengan su tamaño sin deformarse */
+.contenedor-imagenes img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.contenido-texto{
+    display: flex;
+    flex-direction: column; /* Apila el título, la duración y el párrafo hacia abajo */
+    align-items: flex-start;
+    max-width: 637px;
+    color: #555;
+    font-size: 20px;
+
+}
+
+.contenido-texto h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1c1c1c;
+
+}
+.duracion {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.contenido-texto p {
+    margin-bottom: 25px; 
+    text-align: justify; 
+}
+
+
+.boton{
+    display: inline-block;
+    align-self: flex-end; 
+    background-color: #D1CBC1; 
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 12px 35px; 
+    border-radius: 25px; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 30%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10%;
+    }
+
+/* Efecto de interacción (hover): Escala el botón ligeramente y cambia su color  */
+.boton:hover{
+    transform: scale(1.05);
+    background-color: #F28C28;
+}
+
+
+@media (max-width: 768px) {
+    .Titulo {
+        font-size: 32px;
+    }
+
+    .Contenedor-Cursos {
+        padding: 0 15px;
+    }
+
+    .Curso1, .Curso2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contenedor-imagenes img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .contenido-texto {
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .contenido-texto h2 {
+        font-size: 24px;
+    }
+
+    .duracion {
+        font-size: 14px;
+    }
+
+    .contenido-texto p {
+        text-align: center;
+    }
+
+    .boton {
+        align-self: center;
+        width: 60%;
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+

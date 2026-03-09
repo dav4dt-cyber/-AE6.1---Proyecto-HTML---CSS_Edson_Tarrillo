@@ -1,0 +1,145 @@
+.Titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+hr{
+    margin-top: 10px;    
+    margin-bottom: 20px;
+}
+/* Maquetación principal a dos columnas para distribuir la imagen y la información corporativa */
+.contenedor-general{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    
+}
+
+.contenedor-imagen img{
+    width: 500px;
+    height: 550px;
+
+
+}
+
+.contenedor-texto{
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    margin-left: 40px;
+    max-width: 600px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    
+}
+
+.contenedor-texto .texto1{
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contenedor-texto .contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contenido-imagen{
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+
+}
+
+
+
+.contenedor-texto .texto-logo{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.contenedor-texto .texto-color{
+    color: chocolate;
+
+}
+
+.letra-negra{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+
+.letra-normal{
+    color: #4a4a4a; 
+    font-size: 18px; 
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.boton-sociales{
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.boton-sociales img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+/* Efecto de interacción visual al pasar el ratón por los iconos de redes sociales */
+.boton-sociales a:hover img{
+    transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+    .Titulo {
+        font-size: 28px;
+    }
+
+    .contenedor-general {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .contenedor-imagen img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .contenedor-texto {
+        margin: 20px 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .contenedor-texto .texto1 {
+        font-size: 16px;
+    }
+
+    .contenedor-texto .texto-logo {
+        font-size: 22px;
+    }
+
+    .letra-negra, .letra-normal {
+        font-size: 14px;
+    }
+
+    .boton-sociales {
+        justify-content: center;
+    }
+}

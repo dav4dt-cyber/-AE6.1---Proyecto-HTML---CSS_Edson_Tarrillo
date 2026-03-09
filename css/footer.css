@@ -1,0 +1,81 @@
+/* Disposición general del pie de página utilizando Flexbox */
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: black;
+    padding: 50px;
+}
+
+
+.box-footer {
+    margin-top: 30px;
+    width: 22%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 12px;
+}
+
+
+.box-footer h3 {
+    color: aliceblue;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #F28C28;
+
+}
+
+.box-footer a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.box-footer .social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    background-color: #2C3138;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+/* Disposición general del pie de página utilizando Flexbox */
+.social a:hover {
+    background-color: #F28C28;
+}
+
+.main-footer a:hover{
+    color: #F28C28;
+}
+
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 30px 20px;
+    }
+
+    .box-footer {
+        width: 100%;
+        text-align: center;
+        min-width: unset;
+    }
+
+    .box-footer h3 {
+        border-bottom: 3px solid #F28C28;
+    }
+
+    .box-footer .social {
+        justify-content: center;
+    }
+}
